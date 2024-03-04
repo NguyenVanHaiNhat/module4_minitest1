@@ -25,7 +25,6 @@
         <th>Name</th>
         <th>Producer</th>
         <th>Image</th>
-
         <th>Update</th>
         <th>Delete</th>
         <th>View</th>
@@ -37,9 +36,9 @@
         <td th:text="${row.name}"></td>
         <td th:text="${row.producer}"></td>
         <td><img th:src="@{'/image/'+${row.getImg()}}" width="150" alt=""></td>
-        <td><a th:href="@{/presents/{id}/edit(id=${row.getId()})}">edit</a></td>
-        <td><a th:href="@{/presents/{id}/delete(id=${row.getId()})}">delete</a></td>
-        <td><a th:href="@{/presents/{id}/view(id=${row.getId()})}">view</a></td>
+        <td><a th:href="@{/computers/{id}/edit(id=${row.getId()})}">edit</a></td>
+        <td><a th:href="@{/computers/{id}/delete(id=${row.getId()})}">delete</a></td>
+        <td><a th:href="@{/computers/{id}/view(id=${row.getId()})}">view</a></td>
     </tr>
     </tbody>
 </table>
